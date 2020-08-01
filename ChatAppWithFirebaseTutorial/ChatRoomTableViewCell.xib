@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellId" rowHeight="117" id="i60-3D-mkt" customClass="ChatRoomTableViewCell" customModule="ChatAppWithFirebaseTutorial" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="485" height="117"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="i60-3D-mkt" id="xMc-Bi-MDb">
+                <rect key="frame" x="0.0" y="0.0" width="485" height="117"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DSC_3336_Fotor-2" translatesAutoresizingMaskIntoConstraints="NO" id="tVw-18-QWP">
+                        <rect key="frame" x="15" y="28.5" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="tVw-18-QWP" secondAttribute="height" multiplier="1:1" id="79E-Td-qJz"/>
+                            <constraint firstAttribute="width" constant="60" id="GPU-gf-Xcm"/>
+                        </constraints>
+                    </imageView>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="メッセージがここに入ります。" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GlM-Ye-pY1">
+                        <rect key="frame" x="85" y="25" width="250" height="67"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="250" id="fdp-Pg-ipO"/>
+                        </constraints>
+                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bia-L8-RmR">
+                        <rect key="frame" x="340" y="61" width="43" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="tVw-18-QWP" firstAttribute="centerY" secondItem="xMc-Bi-MDb" secondAttribute="centerY" id="4Lh-JT-sb2"/>
+                    <constraint firstItem="tVw-18-QWP" firstAttribute="leading" secondItem="xMc-Bi-MDb" secondAttribute="leading" constant="15" id="9iA-WP-Yky"/>
+                    <constraint firstItem="Bia-L8-RmR" firstAttribute="leading" secondItem="GlM-Ye-pY1" secondAttribute="trailing" constant="5" id="aC1-sb-xAJ"/>
+                    <constraint firstItem="GlM-Ye-pY1" firstAttribute="top" secondItem="xMc-Bi-MDb" secondAttribute="top" constant="25" id="dfC-6y-fjR"/>
+                    <constraint firstItem="GlM-Ye-pY1" firstAttribute="leading" secondItem="tVw-18-QWP" secondAttribute="trailing" constant="10" id="igk-7K-bgf"/>
+                    <constraint firstAttribute="bottom" secondItem="GlM-Ye-pY1" secondAttribute="bottom" constant="25" id="vfx-Sr-X66"/>
+                    <constraint firstItem="GlM-Ye-pY1" firstAttribute="bottom" secondItem="Bia-L8-RmR" secondAttribute="bottom" constant="10" id="zA3-yc-R6y"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dateLabel" destination="Bia-L8-RmR" id="rcV-ah-jYf"/>
+                <outlet property="messageTextView" destination="GlM-Ye-pY1" id="O53-vE-Upo"/>
+                <outlet property="userImageView" destination="tVw-18-QWP" id="QJ2-cg-ypS"/>
+            </connections>
+            <point key="canvasLocation" x="-289.13043478260875" y="179.12946428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="DSC_3336_Fotor-2" width="2464" height="1632"/>
+    </resources>
+</document>

@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F01067924D4EFC300125970 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F01067824D4EFC300125970 /* UIColor-Extension.swift */; };
+		6F01067B24D4F88C00125970 /* ChatRoom.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F01067A24D4F88C00125970 /* ChatRoom.storyboard */; };
+		6F01067D24D4F98200125970 /* ChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F01067C24D4F98200125970 /* ChatRoomViewController.swift */; };
+		6F01067F24D5012900125970 /* ChatRoomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F01067E24D5012900125970 /* ChatRoomTableViewCell.xib */; };
+		6F01068124D5065C00125970 /* ChatRoomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F01068024D5065C00125970 /* ChatRoomTableViewCell.swift */; };
 		6F86EC4D24D30BA70057E9A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F86EC4C24D30BA70057E9A1 /* AppDelegate.swift */; };
 		6F86EC4F24D30BA70057E9A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F86EC4E24D30BA70057E9A1 /* SceneDelegate.swift */; };
-		6F86EC5124D30BA70057E9A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F86EC5024D30BA70057E9A1 /* ViewController.swift */; };
-		6F86EC5424D30BA70057E9A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F86EC5224D30BA70057E9A1 /* Main.storyboard */; };
 		6F86EC5624D30BA90057E9A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F86EC5524D30BA90057E9A1 /* Assets.xcassets */; };
 		6F86EC5924D30BA90057E9A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F86EC5724D30BA90057E9A1 /* LaunchScreen.storyboard */; };
 		6F86EC6324D30E0A0057E9A1 /* ChatList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F86EC6224D30E0A0057E9A1 /* ChatList.storyboard */; };
@@ -18,11 +21,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6F01067824D4EFC300125970 /* UIColor-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
+		6F01067A24D4F88C00125970 /* ChatRoom.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChatRoom.storyboard; sourceTree = "<group>"; };
+		6F01067C24D4F98200125970 /* ChatRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomViewController.swift; sourceTree = "<group>"; };
+		6F01067E24D5012900125970 /* ChatRoomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatRoomTableViewCell.xib; sourceTree = "<group>"; };
+		6F01068024D5065C00125970 /* ChatRoomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomTableViewCell.swift; sourceTree = "<group>"; };
 		6F86EC4924D30BA70057E9A1 /* ChatAppWithFirebaseTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatAppWithFirebaseTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F86EC4C24D30BA70057E9A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6F86EC4E24D30BA70057E9A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6F86EC5024D30BA70057E9A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6F86EC5324D30BA70057E9A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6F86EC5524D30BA90057E9A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F86EC5824D30BA90057E9A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6F86EC5A24D30BA90057E9A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -41,6 +47,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6F01067424D4ED5100125970 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6F01067C24D4F98200125970 /* ChatRoomViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6F01067524D4ED7E00125970 /* StroyBoards */ = {
+			isa = PBXGroup;
+			children = (
+				6F86EC6224D30E0A0057E9A1 /* ChatList.storyboard */,
+				6F01067A24D4F88C00125970 /* ChatRoom.storyboard */,
+			);
+			path = StroyBoards;
+			sourceTree = "<group>";
+		};
 		6F86EC4024D30BA70057E9A1 = {
 			isa = PBXGroup;
 			children = (
@@ -60,12 +83,14 @@
 		6F86EC4B24D30BA70057E9A1 /* ChatAppWithFirebaseTutorial */ = {
 			isa = PBXGroup;
 			children = (
+				6F01067524D4ED7E00125970 /* StroyBoards */,
+				6F01067424D4ED5100125970 /* Controllers */,
 				6F86EC4C24D30BA70057E9A1 /* AppDelegate.swift */,
-				6F86EC4E24D30BA70057E9A1 /* SceneDelegate.swift */,
-				6F86EC6224D30E0A0057E9A1 /* ChatList.storyboard */,
+				6F01067E24D5012900125970 /* ChatRoomTableViewCell.xib */,
+				6F01068024D5065C00125970 /* ChatRoomTableViewCell.swift */,
+				6F01067824D4EFC300125970 /* UIColor-Extension.swift */,
 				6F86EC6424D30F500057E9A1 /* ChatListViewController.swift */,
-				6F86EC5024D30BA70057E9A1 /* ViewController.swift */,
-				6F86EC5224D30BA70057E9A1 /* Main.storyboard */,
+				6F86EC4E24D30BA70057E9A1 /* SceneDelegate.swift */,
 				6F86EC5524D30BA90057E9A1 /* Assets.xcassets */,
 				6F86EC5724D30BA90057E9A1 /* LaunchScreen.storyboard */,
 				6F86EC5A24D30BA90057E9A1 /* Info.plist */,
@@ -131,10 +156,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F01067F24D5012900125970 /* ChatRoomTableViewCell.xib in Resources */,
 				6F86EC5924D30BA90057E9A1 /* LaunchScreen.storyboard in Resources */,
 				6F86EC5624D30BA90057E9A1 /* Assets.xcassets in Resources */,
 				6F86EC6324D30E0A0057E9A1 /* ChatList.storyboard in Resources */,
-				6F86EC5424D30BA70057E9A1 /* Main.storyboard in Resources */,
+				6F01067B24D4F88C00125970 /* ChatRoom.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,9 +171,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F86EC5124D30BA70057E9A1 /* ViewController.swift in Sources */,
 				6F86EC4D24D30BA70057E9A1 /* AppDelegate.swift in Sources */,
+				6F01067924D4EFC300125970 /* UIColor-Extension.swift in Sources */,
+				6F01067D24D4F98200125970 /* ChatRoomViewController.swift in Sources */,
 				6F86EC6524D30F500057E9A1 /* ChatListViewController.swift in Sources */,
+				6F01068124D5065C00125970 /* ChatRoomTableViewCell.swift in Sources */,
 				6F86EC4F24D30BA70057E9A1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -155,14 +183,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		6F86EC5224D30BA70057E9A1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6F86EC5324D30BA70057E9A1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6F86EC5724D30BA90057E9A1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
