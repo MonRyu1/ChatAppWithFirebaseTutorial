@@ -19,6 +19,10 @@ class ChatListViewController: UIViewController {
         
         chatListTableView.delegate = self
         chatListTableView.dataSource = self
+        
+        navigationController?.navigationBar.barTintColor = .rgb(red: 39, green: 49, blue: 69)
+        navigationItem.title = "トーク"
+        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
     }
 }
 
@@ -37,6 +41,13 @@ extension ChatListViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = chatListTableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath)
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("tapped table view")
+        let storyboard = UIStoryboard.init(name: "ChatRoom", bundle: nil)
+        let chatRoomViewController = storyboard.instantiateViewController(withIdentifier: "ChatRoomViewController")
+        navigationController?.pushViewController(chatRoomViewController, animated: true)
     }
     
 }
